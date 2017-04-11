@@ -1,0 +1,156 @@
+<div class="col-sm-9">
+
+    <script>
+        var post_uid = "1393g";
+        var login = 1;
+    </script>
+    <ol class="breadcrumb">
+        <li>当前位置: <a href="{{ domain }}">首页</a></li>
+        <li><a href="/category/{{ article.category.basename }}/1.html">{{ article.category.name }}</a></li>
+        <li class="active"><a href="{{ uri }}">{{ article.title }}</a></li>
+    </ol>
+    <div class="panel panel-black">
+        <div class="panel-heading">
+            <h2>{{ article.title }}</h2>
+            <span>{{ article.pub_date }}</span>
+            <span>作者: {{ article.user.username }}</span>
+            <span>浏览: {{ article.click_count }} 次</span>
+            <button id="act_collect" class="btn btn-primary btn-xs">
+                <span id="text_collect">Collection</span>
+            </button>
+
+
+
+        </div>
+        <div class="panel-body">
+            <div class="entry">
+
+                <p class="summary"><strong>摘要</strong>:
+                    {{ article.title }}
+                </p>
+
+
+                <div class="entrycontent">
+                    <p>{% raw article.content %}</p>
+                </div>
+
+
+            </div>
+            <div class="postmeta">
+                <div class="wpyouvote"></div>
+                <div class="clear"></div>
+                <br>
+                <strong>本文链接:</strong>
+                <a href="{{ domain }}{{ uri }}" class="underline"> {{ article.title }}</a>
+                <br>
+                <strong>版权所有:</strong> 非特殊声明均为本站原创文章，转载请注明出处：
+                <a href="{{ domain }}" class="underline">Learn Linux</a><br>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <b>标签 :{% for tag in article.tags %}{{ tag.name }}{% end %}</b>
+                    <span class="post_label">
+
+
+</span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1490635393241"><a href="#"
+                                                                                                           class="bds_more"
+                                                                                                           data-cmd="more"></a><a
+                            title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到Facebook"
+                                                                                               href="#"
+                                                                                               class="bds_fbook"
+                                                                                               data-cmd="fbook"></a><a
+                            title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a
+                            title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到邮件分享" href="#"
+                                                                                              class="bds_mail"
+                                                                                              data-cmd="mail"></a><a
+                            title="分享到印象笔记" href="#" class="bds_evernotecn" data-cmd="evernotecn"></a><a title="分享到打印"
+                                                                                                         href="#"
+                                                                                                         class="bds_print"
+                                                                                                         data-cmd="print"></a>
+                    </div>
+                    <script>window._bd_share_config = {
+                        "common": {
+                            "bdSnsKey": {},
+                            "bdText": "",
+                            "bdMini": "2",
+                            "bdMiniList": ["mshare", "weixin", "fbook", "tsina", "bdysc", "renren", "twi", "tqq", "bdxc", "kaixin001", "linkedin", "evernotecn", "copy", "print"],
+                            "bdPic": "",
+                            "bdStyle": "0",
+                            "bdSize": "16"
+                        },
+                        "share": {},
+                        "image": {
+                            "viewList": ["weixin", "fbook", "linkedin", "twi", "mail", "evernotecn", "print"],
+                            "viewText": "分享到：",
+                            "viewSize": "16"
+                        },
+                        "selectShare": {
+                            "bdContainerClass": null,
+                            "bdSelectMiniList": ["weixin", "fbook", "linkedin", "twi", "mail", "evernotecn", "print"]
+                        }
+                    };
+                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!--<div class="btn btn-primary btn-sm"><a>The last post.</a></div>-->
+                    <div class="btn btn-primary btn-sm" style="float: left;"><a
+                            href="/post/{% raw last_article(article.id) %}.html">Last Post</a></div>
+                    <div class="btn btn-primary btn-sm" style="float: right;"><a
+                            href="/post/{% raw next_article(article.id) %}.html">Next Post</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var objCollect = document.getElementById('act_collect');
+    objCollect.onclick = function () {
+        collect({
+            id: {{ article.id }}
+            }, '/ajax/collect'
+        )
+    };
+
+    function collect(data, url) {
+        data._xsrf = getCookie("_xsrf");
+        $.ajax({
+            url: url,
+            type: 'POST', //GET
+            data: data,
+            async: true,    //或false,是否异步
+            timeout: 5000,    //超时时间
+            dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+
+            success: function (data) {
+                if (data.status) {
+                    var objCollect = document.getElementById('act_collect');
+                    objCollect.innerHTML = '收藏成功';
+                }
+            },
+            error: function (xhr, textStatus) {
+                if (xhr.status == 403) {
+                    alert('请登录后再收藏文章！！！');
+                    window.location.href = 'http://127.0.0.1:8000/user/login';
+                }
+                console.log(xhr.status);
+                console.log(textStatus);
+            }
+        });
+
+        function getCookie(name) {
+            var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+            return r ? r[1] : undefined;
+        }
+
+    }
+</script>

@@ -1,0 +1,15 @@
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    点击最多</h3>
+            </div>
+            <ul class="list-group">
+                {% for art in most_click_articles %}
+                    <li class="list-group-item">
+                            <a href="/post/{{ art.id }}.html" title="{{ art.title }}">
+                                <span class=""></span>{{ art.title }}
+                            </a>
+                    </li>
+                {% end %}
+            </ul>
+        </div>

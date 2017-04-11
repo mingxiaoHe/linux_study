@@ -1,0 +1,13 @@
+        <div class="panel panel-black">
+            <ul class="list-group">
+                {% for article in cate_articles %}
+                <li class="list-group-item">
+                    <a href="/post/{{ article.id }}.html" title="{{ article.title }}">
+                        {{ article.title }}
+                    </a>
+                    <span>{{ date(article.pub_date) }}</span>
+                {% end %}
+                </li>
+
+            </ul>
+        </div>

@@ -1,0 +1,15 @@
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    近期文章</h3>
+            </div>
+            <ul class="list-group">
+                {% for artic in recent_articles %}
+                    <li class="list-group-item">
+                            <a href="/post/{{ artic.id }}.html" title="{{ artic.title }}">
+                                <span class=""></span>{{ artic.title }}
+                            </a>
+                    </li>
+                {% end %}
+            </ul>
+        </div>

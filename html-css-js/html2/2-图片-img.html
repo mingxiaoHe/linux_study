@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 align="center">xxxxxx</h2>
+
+    <img src="../../static/imgs/osgeo_logo.png" width="400px" border="1px"  align="left">
+
+    <p>MySQL 5.5 开始支持存储 4 字节的 UTF-8 编码的字符了，iOS 里自带的 emoji（如 🍎 字符）就属于这种。
+如果是对表来设置的话，可以把上面代码中的 utf8 改成 utf8mb4，DB_CONNECT_STRING 里的 charset 也这样更改。
+如果对库或字段来设置，则还是自己写 SQL 语句比较方便，具体细节可参考《How to support full Unicode in MySQL databases》。
+不建议全用 utf8mb4 代替 utf8，因为前者更慢，索引会占用更多空间。</p>
+</body>
+</html>

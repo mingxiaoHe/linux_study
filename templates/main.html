@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/jquery.validate.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <title>Learn Linux</title>
+    <meta name="keywords" content="Linux,Python">
+    <meta name="description" content="Linux学习网站">
+    <style type="text/css">
+        #mapdiv {
+            margin: 0 auto;
+            width: 100%;
+            height: 200px;
+            border: 1px solid #dddddd;
+        }
+    </style>
+    <style>
+        .label, .label-default {
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--头部开始-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Linux</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/article/1.html">文档</a></li>
+                <li><a href="http://127.0.0.1:8001">后台</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户
+                        <b class="caret"></b>
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+                        <li class="divider"></li>
+                        <li><a href="/collect/list">我的收藏</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/user/info">我的信息</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="form" method="get" id="find_calc" action="/search">
+                <!--{% raw xsrf_form_html() %}-->
+                <div class="form-group">
+                    <!--<input type="hidden" name="page" value="1" class="form-control">-->
+                    <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Keyword search">
+                    <!--<input type="submit" value="tijiao">-->
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+
+<!--中间部分开始-->
+{% block middle %}{% end %}
+<!--中间部分结束-->
+
+<!--尾部开始-->
+<div class="container-fluid foot-wrap">
+    <div class="container">
+
+        <p align="center" style="margin-top: 20px;color:#878B91;">Copyright &copy; 2017-2017
+            <a href="">小明235</a> 老子不备案</p>
+        <p align="center" style="margin-top: 20px;color:#878B91;">Powered by <a href="" target="_blank">Hexm</a></p>
+        </p>
+    </div>
+</div>
+<!--尾部结束-->

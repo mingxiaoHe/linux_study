@@ -1,0 +1,64 @@
+<div class="col-sm-9">
+
+    <script type="text/javascript">
+        $().ready(function () {
+            $("#form_login").validate(
+                {
+                    rules: {
+                        user_name: {
+                            required: true
+                        },
+                        user_pass: {
+                            required: true
+                        }
+                    },
+                    messages: {
+                        user_name: {
+                            required: "<span class='red'>请输入用户名</span>"
+                        },
+                        user_pass: {
+                            required: "<span class='red'>请输入密码</span>"
+                        }
+                    }
+                }
+            );
+        });
+    </script>
+    <ol class="breadcrumb">
+        <li>当前位置: <a href="{{ domain }}">首页</a></li>
+        <li>用户</li>
+        <li><a href="/user/login"> 用户登录</a></li>
+    </ol>
+    <div class="panel panel-black">
+        <div class="panel-heading">
+            用户登录
+        </div>
+        <div class="panel-body">
+            <form id="form_login" method="post" class="form-horizontal" role="form" novalidate="novalidate">
+                {% raw xsrf_form_html() %}
+                <div class="form-group">
+                    <label for="user_name" class="col-sm-2 control-label">用户名: </label>
+                    <div class="col-sm-10">
+                        <input type="text" name="user_name" id="user_name" class="form-control" placeholder="请输入你的用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="user_pass" class="col-sm-2 control-label">密码: </label>
+                    <div class="col-sm-10">
+                        <input type="password" name="user_pass" id="user_pass" class="form-control"
+                               placeholder="请输入你的密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">登陆</button>
+                    </div>
+                </div>
+            </form>
+            <div class="alert alert-info">非本站用户？ 请 <a href="/user/regist" class="btn btn-primary">进行注册</a> 。</div>
+            <div class="alert alert-warning">忘记密码，<a href="/user/reset-password">找回密码.</a></div>
+        </div>
+    </div>
+
+</div>

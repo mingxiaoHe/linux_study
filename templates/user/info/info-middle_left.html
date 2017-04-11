@@ -1,0 +1,27 @@
+<div class="col-sm-9">
+
+    <ol class="breadcrumb">
+        <li>当前位置: <a href="{{ domain }}">首页</a></li>
+        <li>用户</li>
+        <li><a href="/user/info"> 用户信息</a></li>
+    </ol>
+    <div class="panel panel-black">
+        <div class="panel-heading">
+            用户信息
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item"> 用户名：{{ username }}</li>
+            <li class="list-group-item">电子邮箱：{{ email }}</li>
+            <li class="list-group-item">权限：{{ roles }}</li>
+
+            <!--<li class="list-group-item">-->
+                <!--<a href="http://127.0.0.1:8001/article/add.html" class="btn btn-primary">发布信息</a>-->
+                <!--<a href="/publish/w" class="btn btn-primary">湿地信息</a></li>-->
+            <li class="list-group-item"><a href="/user/changepass" class="btn btn-primary" style="margin-right: 10px">修改密码</a>
+                <a href="/user/changeinfo" class="btn btn-primary" style="margin-right: 10px">修改个人信息</a>
+                <a href="/user/logout" class="btn btn-primary">注销</a>
+            </li>
+        </ul>
+    </div>
+
+</div>

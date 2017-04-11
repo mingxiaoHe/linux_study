@@ -1,0 +1,29 @@
+<div class="container" style="margin-top: 60px;">
+    <div class="panel panel-info">
+        <div class="panel-heading"> 您的位置: <a href="{{ domain }}">首页</a> &gt;
+            查找结果
+        </div>
+        <div class="alert alert-info">
+            共找到关键词 "{{ keyword }}" 结果 {{ count }} 条！
+        </div>
+        <ul class="list-group">
+            {% for article in articles %}
+            <li class="list-group-item"><a href="/post/{{ article.id }}.html" title="{{ article.title }}"><span
+                    style="color:green;"
+                    >{{ article.category.name }}</span>
+                {{ article.title }}</a><br>
+                <span style="color: #888;">{% raw format_content(article.content, keyword) %}</span>
+            </li>
+            {% end %}
+        </ul>
+        <div class="panel-footer">
+            <ul class="pagination">
+                <ul class="pagination">
+                    {% for line in page_string %}
+                        {% raw line %}
+                    {% end %}
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>

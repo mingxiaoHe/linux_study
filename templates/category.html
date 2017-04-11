@@ -1,0 +1,15 @@
+
+             <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                    文档分类</h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        {% for category in categories %}
+                            <a href="/category/{{ category.basename }}/1.html" title="{{ category.name }}" class="btn btn-default"
+                               style="margin-bottom: 5px">{{ category.name }}</a>
+                        {% end %}
+                    </li>
+                </ul>
+            </div>
