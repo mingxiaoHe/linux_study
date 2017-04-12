@@ -47,6 +47,7 @@ class User(Base):
     username = Column(String(32), nullable=False, unique=True)
     password = Column(String(32), nullable=False)
     email = Column(String(32), nullable=False, unique=True)
+    create_date = Column(DateTime)
 
     articles = relationship('Article', backref='user')
     roles = relationship('Role', secondary=useridToRoleid, backref='users')

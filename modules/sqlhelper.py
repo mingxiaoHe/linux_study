@@ -49,10 +49,23 @@ class SqlHelper(object):
         # self.session.add(Role(name='ordinary'))
         # self.session.commit()
         try:
+            role_list = []
             user = User(username=username, password=password, email=email)
-            role = Role(name='ordinary')
-            user.roles = [role]
-            self.session.add_all([user, role])
+            role_obj = self.session.query(Role).filter(Role.name == 'ordinary').first()
+            print(role_obj.id)
+            if role_obj is not None:
+                print(1)
+                role = role_obj
+                role_list.append(role)
+            else:
+                role = Role(name='ordinary')
+                self.session.add(role)
+                self.session.commit()
+
+            print(role_list)
+
+            user.roles = role_list
+            self.session.add(user)
             self.session.commit()
             return True
         except IntegrityError as e:
@@ -155,5 +168,5 @@ class SqlHelper(object):
 
 if __name__ == '__main__':
     obj = SqlHelper()
-    user_obj = obj.get_user_info(b'hexm')
+    user_obj = obj.get_user_i
     print(user_obj.collections)

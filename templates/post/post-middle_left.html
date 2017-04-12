@@ -6,14 +6,24 @@
     </script>
     <ol class="breadcrumb">
         <li>当前位置: <a href="{{ domain }}">首页</a></li>
-        <li><a href="/category/{{ article.category.basename }}/1.html">{{ article.category.name }}</a></li>
+        {% try %}
+            {% if article.category.basename %}
+            <li><a href="/category/{{ article.category.basename }}/1.html">{{ article.category.name }}</a></li>
+            {% end %}
+        {% except %}
+            <li>未知分类</li>
+        {% end %}
         <li class="active"><a href="{{ uri }}">{{ article.title }}</a></li>
     </ol>
     <div class="panel panel-black">
         <div class="panel-heading">
             <h2>{{ article.title }}</h2>
             <span>{{ article.pub_date }}</span>
-            <span>作者: {{ article.user.username }}</span>
+            {% try %}
+                <span>作者: {{ article.user.username }}</span>
+            {% except %}
+                <span>作者: 未知</span>
+            {% end %}
             <span>浏览: {{ article.click_count }} 次</span>
             <button id="act_collect" class="btn btn-primary btn-xs">
                 <span id="text_collect">Collection</span>
