@@ -6,6 +6,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import IntegrityError
 from conf.settings import SQLALCHEMY_DATABASE_URI
 from modules.models import Category, Links, User, Role, Article, Description
+from modules.common import get_datetime
 from sqlalchemy import or_
 
 
@@ -40,7 +41,7 @@ class SqlHelper(object):
         return self.session.query(Links.name, Links.callback_url).all()
         # return self.session.query(Links.name, Links.callback_url).order_by(Links.pub_date.asc()).all()[0:2]
 
-    def regist(self, username, password, email):
+    def regist(self, username, password, email, role='ordinary'):
         """
         注册用户，从首页注册的都是普通用户，后台注册可以指定是什么用户
         :return:
@@ -50,19 +51,16 @@ class SqlHelper(object):
         # self.session.commit()
         try:
             role_list = []
-            user = User(username=username, password=password, email=email)
-            role_obj = self.session.query(Role).filter(Role.name == 'ordinary').first()
+            user = User(username=username, password=password, email=email, create_date=get_datetime())
+            role_obj = self.session.query(Role).filter(Role.name == role).first()
             print(role_obj.id)
             if role_obj is not None:
-                print(1)
                 role = role_obj
                 role_list.append(role)
             else:
                 role = Role(name='ordinary')
                 self.session.add(role)
                 self.session.commit()
-
-            print(role_list)
 
             user.roles = role_list
             self.session.add(user)

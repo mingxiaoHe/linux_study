@@ -1,5 +1,6 @@
 import os.path
 import hashlib
+import datetime
 
 def get_md5_string(string):
     encrypt_obj = hashlib.md5(bytes('passwd', encoding='utf-8'))
@@ -13,6 +14,9 @@ def turn_to_int(arg, default):
     except Exception as e:
         arg = default
     return arg
+
+def get_datetime():
+    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 
 if __name__ == '__main__':

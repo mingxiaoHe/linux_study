@@ -36,7 +36,7 @@
             <div class="entry">
 
                 <p class="summary"><strong>摘要</strong>:
-                    {{ article.title }}
+                    {{ article.description }}
                 </p>
 
 
@@ -60,7 +60,7 @@
         <div class="panel-footer">
             <div class="row">
                 <div class="col-sm-6">
-                    <b>标签 :{% for tag in article.tags %}{{ tag.name }}{% end %}</b>
+                    <b>标签 :{% for tag in article.tags %}{{ tag.name }}&nbsp{% end %}</b>
                     <span class="post_label">
 
 
