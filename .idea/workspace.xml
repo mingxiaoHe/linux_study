@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dd5a1a0-3a61-496f-93e4-7404c8af0930" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/imgs/logo.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/osgeo_logo.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/imgs/logo.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/imgs/logo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/common.py" afterPath="$PROJECT_DIR$/modules/common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/sqlhelper.py" afterPath="$PROJECT_DIR$/modules/sqlhelper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/models.py" afterPath="$PROJECT_DIR$/modules/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/ui_methods.py" afterPath="$PROJECT_DIR$/modules/ui_methods.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index/index-middle_logo.html" afterPath="$PROJECT_DIR$/templates/index/index-middle_logo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main.html" afterPath="$PROJECT_DIR$/templates/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/post/post-middle_left.html" afterPath="$PROJECT_DIR$/templates/post/post-middle_left.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,14 +20,14 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/linux_study$ueditor.coverage" NAME="ueditor Coverage Results" MODIFIED="1491489822715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin/tornado-ueditor" />
     <SUITE FILE_PATH="coverage/linux_study$models_mtm.coverage" NAME="models_mtm Coverage Results" MODIFIED="1490769681270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
-    <SUITE FILE_PATH="coverage/linux_study$sqlhelper.coverage" NAME="sqlhelper Coverage Results" MODIFIED="1492155186556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin/modules" />
-    <SUITE FILE_PATH="coverage/linux_study$index.coverage" NAME="index Coverage Results" MODIFIED="1492161792243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin" />
+    <SUITE FILE_PATH="coverage/linux_study$sqlhelper.coverage" NAME="sqlhelper Coverage Results" MODIFIED="1492262109740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin/modules" />
+    <SUITE FILE_PATH="coverage/linux_study$index.coverage" NAME="index Coverage Results" MODIFIED="1492262754177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin" />
     <SUITE FILE_PATH="coverage/linux_study$common.coverage" NAME="common Coverage Results" MODIFIED="1491544566278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin/modules" />
     <SUITE FILE_PATH="coverage/linux_study$migr.coverage" NAME="migr Coverage Results" MODIFIED="1490783280969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/linux_study$mig.coverage" NAME="mig Coverage Results" MODIFIED="1490785868072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/linux_study$test.coverage" NAME="test Coverage Results" MODIFIED="1490781141771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
     <SUITE FILE_PATH="coverage/linux_study$common__1_.coverage" NAME="common (1) Coverage Results" MODIFIED="1491479777851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
-    <SUITE FILE_PATH="coverage/linux_study$index__1_.coverage" NAME="index (1) Coverage Results" MODIFIED="1492164190725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/linux_study$index__1_.coverage" NAME="index (1) Coverage Results" MODIFIED="1492262749931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/linux_study$ueditor__1_.coverage" NAME="ueditor (1) Coverage Results" MODIFIED="1491539037693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../linux_study_admin" />
     <SUITE FILE_PATH="coverage/linux_study$PageHelper.coverage" NAME="PageHelper Coverage Results" MODIFIED="1491106644765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
     <SUITE FILE_PATH="coverage/linux_study$sqlhelper__1_.coverage" NAME="sqlhelper (1) Coverage Results" MODIFIED="1491817698670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../linux_study_admin/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="311" column="55" lean-forward="false" selection-start-line="311" selection-start-column="55" selection-end-line="311" selection-end-column="55" />
+            <state relative-caret-position="13305">
+              <caret line="903" column="15" lean-forward="false" selection-start-line="903" selection-start-column="15" selection-end-line="903" selection-end-column="15" />
               <folding>
                 <element signature="e#38#47#0" expanded="true" />
               </folding>
@@ -53,11 +52,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post-middle_left.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/post/post-middle_left.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+              <folding>
+                <element signature="e#166#247#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sqlhelper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/sqlhelper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="242" column="26" lean-forward="true" selection-start-line="242" selection-start-column="17" selection-end-line="242" selection-end-column="26" />
+              <folding>
+                <marker date="1492263660000" expanded="true" signature="6324:6383" ph="INSERT INTO useridToRoleid... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -66,85 +99,43 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+            <state relative-caret-position="1215">
+              <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-middle_description.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/index-middle_description.html">
+      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-middle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/index-middle.html">
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/tag/info.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="78" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1492177478000" expanded="true" signature="4688:4697" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-middle_logo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/index-middle_logo.html">
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/article/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index-middle_left.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index/index-middle_left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sqlhelper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/sqlhelper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="480">
+              <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding>
-                <element signature="e#4#43#0" expanded="true" />
-                <marker date="1492161792000" expanded="true" signature="4758:4857" ph="select id fr... articles" />
-                <marker date="1492161792000" expanded="true" signature="5065:5163" ph="select id fr... articles" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3311">
-              <caret line="130" column="21" lean-forward="true" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,14 +146,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML4 File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>article</find>
       <find>link</find>
       <find>desc</find>
       <find>辣鸡</find>
@@ -192,6 +182,7 @@
       <find>get_all_admins</find>
       <find>next.html</find>
       <find>index.html</find>
+      <find>sb</find>
     </findStrings>
     <replaceStrings>
       <replace>session</replace>
@@ -205,20 +196,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/admin/user/ordinary.html" />
-        <option value="$PROJECT_DIR$/templates/admin/user/admin.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/tornado-ueditor/templates/ueditor.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/ueditor.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/main.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/static/style/css/ch-ui.admin.css" />
         <option value="$PROJECT_DIR$/templates/search/se.html" />
         <option value="$PROJECT_DIR$/templates/search/search.html" />
         <option value="$PROJECT_DIR$/modules/PageHelper.py" />
-        <option value="$PROJECT_DIR$/modules/ui_methods.py" />
         <option value="$PROJECT_DIR$/templates/category.html" />
         <option value="$PROJECT_DIR$/templates/index/index-middle_right_cate.html" />
         <option value="$PROJECT_DIR$/templates/index/index-middle_right.html" />
-        <option value="$PROJECT_DIR$/templates/search/search-middle.html" />
         <option value="$PROJECT_DIR$/templates/collect/collect.html" />
         <option value="$PROJECT_DIR$/templates/collect/collect-middle.html" />
         <option value="$PROJECT_DIR$/templates/user/info/info-middle_left.html" />
@@ -229,7 +215,6 @@
         <option value="$PROJECT_DIR$/templates/article/article-middle_right.html" />
         <option value="$PROJECT_DIR$/index.py" />
         <option value="$PROJECT_DIR$/templates/article/article-middle_left_position.html" />
-        <option value="$PROJECT_DIR$/modules/models.py" />
         <option value="$PROJECT_DIR$/../linux_study_admin/test.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/modules/models.py" />
         <option value="$PROJECT_DIR$/templates/index/index-middle_left_list.html" />
@@ -240,22 +225,28 @@
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/tag/cate.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/category/info.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/links/info.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/templates/tag/info.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/desc/info.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/user/ordinary.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/user/admin.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/templates/article/add.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/article/next.html" />
-        <option value="$PROJECT_DIR$/templates/main.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/templates/index.html" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/login.html.bak" />
         <option value="$PROJECT_DIR$/../linux_study_admin/templates/login.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/modules/sqlhelper.py" />
         <option value="$PROJECT_DIR$/modules/common.py" />
         <option value="$PROJECT_DIR$/modules/sqlhelper.py" />
-        <option value="$PROJECT_DIR$/templates/index/index-middle_logo.html" />
-        <option value="$PROJECT_DIR$/../linux_study_admin/index.py" />
         <option value="$PROJECT_DIR$/templates/post/post-middle_left.html" />
+        <option value="$PROJECT_DIR$/templates/index/index-middle_logo.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/modules/ui_methods.py" />
+        <option value="$PROJECT_DIR$/templates/search/search-middle.html" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/index.py" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/templates/tag/info.html" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/templates/article/add.html" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/modules/models.py" />
+        <option value="$PROJECT_DIR$/modules/kaoshi.py" />
+        <option value="$PROJECT_DIR$/../linux_study_admin/modules/sqlhelper.py" />
       </list>
     </option>
   </component>
@@ -266,10 +257,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="93" />
-    <option name="y" value="23" />
-    <option name="width" value="1262" />
-    <option name="height" value="702" />
+    <option name="x" value="164" />
+    <option name="y" value="32" />
+    <option name="width" value="1250" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -289,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -312,25 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux_study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux_study_admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,7 +328,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,35 +342,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux_study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linux_study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
+              <option name="myItemId" value="alembic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -720,8 +671,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.index (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.index" />
+        <item index="0" class="java.lang.String" itemvalue="Python.index" />
+        <item index="1" class="java.lang.String" itemvalue="Python.index (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.sqlhelper" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
         <item index="4" class="java.lang.String" itemvalue="Python.sqlhelper (1)" />
@@ -742,16 +693,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="23" width="1262" height="702" extended-state="0" />
+    <frame x="164" y="32" width="1250" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27020603" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1656" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19115324" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06447188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328152" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -782,48 +733,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recent_articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search/search-middle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="111" lean-forward="true" selection-start-line="10" selection-start-column="111" selection-end-line="10" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/collect/collect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/collect/collect-middle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user/info/info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -908,14 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/ueditor.html" />
     <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/pass.html" />
     <entry file="file://$PROJECT_DIR$/../linux_study_admin/test.html" />
@@ -923,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="42" column="242" lean-forward="false" selection-start-line="42" selection-start-column="242" selection-end-line="42" selection-end-column="242" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="41" column="242" lean-forward="false" selection-start-line="41" selection-start-column="242" selection-end-line="41" selection-end-column="242" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,13 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492156752000" expanded="true" signature="4684:4693" ph="..." />
-            <marker date="1492156752000" expanded="true" signature="4823:4832" ph="..." />
-            <marker date="1492156752000" expanded="true" signature="6667:6676" ph="..." />
-            <marker date="1492156752000" expanded="true" signature="6830:6839" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,13 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="28" column="152" lean-forward="true" selection-start-line="28" selection-start-column="152" selection-end-line="28" selection-end-column="152" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492157447000" expanded="true" signature="4377:4386" ph="..." />
-            <marker date="1492157447000" expanded="true" signature="4509:4518" ph="..." />
-            <marker date="1492157447000" expanded="true" signature="6311:6320" ph="..." />
-            <marker date="1492157447000" expanded="true" signature="6463:6472" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,19 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-          <folding>
-            <marker date="1492157570000" expanded="true" signature="3295:3304" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/tag/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <marker date="1492157515000" expanded="true" signature="4746:4755" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -995,26 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="26" column="116" lean-forward="false" selection-start-line="26" selection-start-column="116" selection-end-line="26" selection-end-column="116" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492157739000" expanded="true" signature="4281:4290" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="4410:4419" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="4539:4548" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="6721:6730" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="7066:7075" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/article/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="127" column="25" lean-forward="false" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#form#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#1;n#div#1;n#form#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,30 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="26" column="120" lean-forward="false" selection-start-line="26" selection-start-column="120" selection-end-line="26" selection-end-column="120" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492157739000" expanded="true" signature="4278:4287" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="4407:4416" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="4536:4545" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="6722:6731" ph="..." />
-            <marker date="1492157739000" expanded="true" signature="7213:7222" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tornado/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="667" column="45" lean-forward="false" selection-start-line="667" selection-start-column="45" selection-end-line="667" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="11" lean-forward="false" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,37 +887,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/login.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/login.html.bak" />
     <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/sqlhelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="58" column="93" lean-forward="false" selection-start-line="58" selection-start-column="93" selection-end-line="58" selection-end-column="93" />
-          <folding>
-            <element signature="e#4#43#0" expanded="true" />
-            <marker date="1492161792000" expanded="true" signature="6313:6372" ph="INSERT INTO useridToRoleid... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,17 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,11 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#4#43#0" expanded="true" />
-            <marker date="1492161792000" expanded="true" signature="4758:4857" ph="select id fr... articles" />
-            <marker date="1492161792000" expanded="true" signature="5065:5163" ph="select id fr... articles" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3311">
           <caret line="130" column="21" lean-forward="true" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,42 +944,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="34" lean-forward="true" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tornado/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="4" column="15751" lean-forward="false" selection-start-line="4" selection-start-column="15751" selection-end-line="4" selection-end-column="15751" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index/index-middle_logo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        <state relative-caret-position="15">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/post/post-middle_left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ui_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/search-middle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="100" lean-forward="true" selection-start-line="14" selection-start-column="100" selection-end-line="14" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/tag/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="78" />
+          <folding>
+            <marker date="1492177478000" expanded="true" signature="4688:4697" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/article/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../linux_study_admin/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="311" column="55" lean-forward="false" selection-start-line="311" selection-start-column="55" selection-end-line="311" selection-end-column="55" />
+        <state relative-caret-position="13305">
+          <caret line="903" column="15" lean-forward="false" selection-start-line="903" selection-start-column="15" selection-end-line="903" selection-end-column="15" />
           <folding>
             <element signature="e#38#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/post/post-middle_left.html">
+    <entry file="file://$PROJECT_DIR$/alembic/env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/kaoshi.py" />
+    <entry file="file://$PROJECT_DIR$/modules/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding>
+            <element signature="e#166#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/sqlhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="242" column="26" lean-forward="true" selection-start-line="242" selection-start-column="17" selection-end-line="242" selection-end-column="26" />
+          <folding>
+            <marker date="1492263660000" expanded="true" signature="6324:6383" ph="INSERT INTO useridToRoleid... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../linux_study_admin/modules/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="121" column="41" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="41" />
           <folding />
         </state>
       </provider>

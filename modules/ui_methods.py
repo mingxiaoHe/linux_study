@@ -1,4 +1,5 @@
 
+import re
 
 def date(object, t):
     """
@@ -19,6 +20,7 @@ def format_content(object, content, keyword):
     :return:
     """
     content=str(content)
+    content = re.sub(r'</?\w+[^>]*>','',content)
     tmp = content.split(keyword)
     format_string = '<b class="match term0">%s</b>' % keyword
 

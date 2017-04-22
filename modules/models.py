@@ -148,3 +148,9 @@ class Description(Base):
     id = Column(Integer, primary_key=True)
     content = Column(String(150))
     pub_date = Column(DateTime)
+
+
+
+
+
+
