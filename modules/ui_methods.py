@@ -1,5 +1,6 @@
 
 import re
+import tornado.escape
 
 def date(object, t):
     """
@@ -30,7 +31,7 @@ def format_content(object, content, keyword):
             res += num[-20:] + format_string + tmp[tmp.index(num)+1][0:20] + '...'
         else:
             res += num[-20:]
-    return res
+    return tornado.escape.xhtml_unescape(res)
 
 def length(object, alist):
     return len(alist)
