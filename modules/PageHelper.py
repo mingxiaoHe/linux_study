@@ -43,17 +43,11 @@ def Pager(page, all_page_count, murl):
 
     # 上一页
     page_html = []
-    # if page > all_page_count:  # 超过最大页数后，点击上一页的url为最后一页
-    #     home_html = '<li><a class="{0}" href="%s/%d.html">Home</a></li>' % (murl, 1)
-    #     priv_html = '<li><a class="{0}" href="%s/%d.html">Previous page</a></li>' % (murl, all_page_count)
-    #     page_html.append(home_html)
-    #     page_html.append(priv_html)
     if page > 1:
         home_html = '<li><a class="{0}" href="%s/%d.html">Home</a></li>' % (murl, 1)
         priv_html = '<li><a class="{0}" href="%s/%d.html">Previous page</a></li>' % (murl, page-1)
         page_html.append(home_html)
         page_html.append(priv_html)
-
 
     # 当前页及中间的页
     for i in range(all_page_count):
@@ -64,17 +58,11 @@ def Pager(page, all_page_count, murl):
         page_html.append(present_html)
 
     # 下一页
-    # if page < 1:  # 如果是负的页数，下一页显示第一页
-    #     next_html = '<li><a class="{0}" href="%s/%d.html">Next page</a>' % (murl, 1)
-    #     page_html.append(next_html)
-    #     end_html = '<li><a class="{0}" href="%s/%d.html">End</a>' % (murl, all_page_count)
-    #     page_html.append(end_html)
     if page < all_page_count:
         next_html = '<li><a class="{0}" href="%s/%d.html">Next page</a>' % (murl, page+1)
         page_html.append(next_html)
         end_html = '<li><a class="{0}" href="%s/%d.html">End</a>' % (murl, all_page_count)
         page_html.append(end_html)
-
 
     return page_html
 
@@ -83,11 +71,6 @@ def get_method_pager(page, all_page_count, murl):
 
     # 上一页
     page_html = []
-    # if page > all_page_count:  # 超过最大页数后，点击上一页的url为最后一页
-    #     home_html = '<li><a class="{0}" href="%s/%d.html">Home</a></li>' % (murl, 1)
-    #     priv_html = '<li><a class="{0}" href="%s/%d.html">Previous page</a></li>' % (murl, all_page_count)
-    #     page_html.append(home_html)
-    #     page_html.append(priv_html)
     if page > 1:
         home_html = '<li><a class="{0}" href="%s%d">Home</a></li>' % (murl, 1)
         priv_html = '<li><a class="{0}" href="%s%d">Previous page</a></li>' % (murl, page-1)
@@ -104,18 +87,13 @@ def get_method_pager(page, all_page_count, murl):
         page_html.append(present_html)
 
     # 下一页
-    # if page < 1:  # 如果是负的页数，下一页显示第一页
-    #     next_html = '<li><a class="{0}" href="%s/%d.html">Next page</a>' % (murl, 1)
-    #     page_html.append(next_html)
-    #     end_html = '<li><a class="{0}" href="%s/%d.html">End</a>' % (murl, all_page_count)
-    #     page_html.append(end_html)
     if page < all_page_count:
         next_html = '<li><a class="{0}" href="%s%d">Next page</a>' % (murl, page+1)
         page_html.append(next_html)
         end_html = '<li><a class="{0}" href="%s%d">End</a>' % (murl, all_page_count)
         page_html.append(end_html)
 
-
     return page_html
+
 if __name__ == '__main__':
     Pager(3, 10, 'sb')

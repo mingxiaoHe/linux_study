@@ -1,11 +1,8 @@
-#!
-
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import func
 from sqlalchemy import create_engine
 from sqlalchemy.exc import IntegrityError
 from conf.settings import SQLALCHEMY_DATABASE_URI
-from modules.models import Category, Links, User, Role, Article, Description
+from modules.models import Category, Links, User, Role, Article, Description, Rotate
 from modules.common import get_datetime
 from sqlalchemy import or_
 
@@ -159,12 +156,9 @@ class SqlHelper(object):
     def collected_articles(self, user):
         return self.session.query(User).filter(User.username == user).scalar()
 
-
-    def __del__(self):
-        self.session.close()
-
+    def get_rotates(self):
+        return self.session.query(Rotate).all()
 
 if __name__ == '__main__':
     obj = SqlHelper()
-    user_obj = obj.get_user_i
-    print(user_obj.collections)
+    print(obj.get_rotates())

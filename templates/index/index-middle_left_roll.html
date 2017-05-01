@@ -1,5 +1,149 @@
-            <div class="row">
-                <div class="slideshow col-sm-12">
-                    <div id="mapdiv"></div>
-                </div>
+<style>
+    .mylb{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        position:relative;
+    }
+    .mylb .lbimgs{
+        overflow:hidden;
+        width:100%;
+        height:100%;
+        float:left;
+        padding:0px;
+    }
+    .mylb .lbimgs li{
+        list-style-type:none;
+        display:none;
+    }
+    .mylb .lbimgs li.active{
+        list-style-type:none;
+        display:block
+    }
+    .mylb img.lbimg{
+        display:block;
+        width:420px;
+        max-width:420px;
+        min-width:420px;
+        height:200px;
+        border-radius:3px;
+        float:left;
+    }
+    .mylb div.lbinfo{
+        float:right;
+        width:400px;
+    }
+    .lninfo a{
+        line-height:30px;
+        color:#000;
+        text-decoration:none;
+        outline:none;
+    }
+    .lninfo p{
+        line-height:24px;
+        color:#6a6a6a;
+        margin:12px 0;
+        height:72px;
+        width:400px
+    }
+    .lninfo span{
+    }
+    .mylb .lbbtn{
+        position:absolute;
+        right:0px;
+        bottom:0px;
+        text-align:right;
+    }
+    .mylb .lbbtn li{
+        display:inline-block;
+        width:10px;
+        height:10px;
+        margin:0 4px;
+        cursor:pointer;
+        background-color:rgb(49,112,143);
+        border-radius:5px;
+        list-style-type:none;
+    }
+    .mylb .lbbtn li.lbactive{
+        width:25px;
+    }
+
+
+</style>
+
+<div class="row">
+    <div class="slideshow col-sm-12">
+        <div id="mapdiv">
+            <div class="mylb">
+                <ul class="lbimgs">
+
+                    {% for rotate in rotates %}
+                    {% if rotates.index(rotate) == 0 %}
+                    <li class="active"><img src="{{ rotate.article_src }}" alt="" class="lbimg">
+                        <div class="lbinfo">
+                            <a href="{{ rotate.img_src }}" target="_blank">{{ rotate.title }}</a>
+                            <p>{{ rotate.description }}</p>
+                            <span>{{ rotate.pub_date }}</span>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li><img src="{{ rotate.article_src }}" alt="" class="lbimg">
+                        <div class="lbinfo">
+                            <a href="{{ rotate.img_src }}" target="_blank">{{ rotate.title }}</a>
+                            <p>{{ rotate.description }}</p>
+                            <span>{{ rotate.pub_date }}</span>
+                        </div>
+                    </li>
+                    {% end %}
+                    {% end %}
+                </ul>
+                <ul class="lbbtn">
+                    <li class="lbactive"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
+
+        </div>
+    </div>
+</div>
+<script>
+      var curIndex = 0, //当前index
+      imgLen = $(".lbimgs li").length; //图片总数
+      var autoChange = setInterval(function(){
+        if(curIndex < imgLen-1){
+          curIndex ++;
+        }else{
+          curIndex = 0;
+        }
+        //调用变换处理函数
+        changeTo(curIndex);
+      },2500);
+      function changeTo(num){
+        $(".lbimgs").find("li").removeClass("active").eq(num).addClass("active");
+        $(".lbbtn").find("li").removeClass("lbactive").eq(num).addClass("lbactive");
+      }
+      function autoChangeAgain(){
+          autoChange = setInterval(function(){
+          if(curIndex < imgLen-1){
+            curIndex ++;
+          }else{
+            curIndex = 0;
+          }
+        //调用变换处理函数
+          changeTo(curIndex);
+        },2500);
+        }
+      $(".lbbtn").find("li").each(function(item){
+        $(this).hover(function(){
+          clearInterval(autoChange);
+          changeTo(item);
+          curIndex = item;
+        },function(){
+          autoChangeAgain();
+        });
+      });
+
+
+</script>
