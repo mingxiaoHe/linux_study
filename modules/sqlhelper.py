@@ -112,7 +112,7 @@ class SqlHelper(object):
         return self.session.query(Article).filter(Article.category_id == category_id).count()
 
     def get_recent_article(self):
-        return self.session.query(Article).order_by(Article.pub_date.asc()).all()
+        return self.session.query(Article).order_by(Article.pub_date.desc()).all()
 
     def get_most_click_articles(self):
         return self.session.query(Article).order_by(Article.click_count.desc()).all()
@@ -158,6 +158,9 @@ class SqlHelper(object):
 
     def get_rotates(self):
         return self.session.query(Rotate).all()
+
+    def __del__(self):
+        self.session.close()
 
 if __name__ == '__main__':
     obj = SqlHelper()

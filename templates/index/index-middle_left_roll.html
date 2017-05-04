@@ -76,14 +76,13 @@
         <div id="mapdiv">
             <div class="mylb">
                 <ul class="lbimgs">
-
                     {% for rotate in rotates %}
                     {% if rotates.index(rotate) == 0 %}
                     <li class="active"><img src="{{ rotate.article_src }}" alt="" class="lbimg">
                         <div class="lbinfo">
                             <a href="{{ rotate.img_src }}" target="_blank">{{ rotate.title }}</a>
                             <p>{{ rotate.description }}</p>
-                            <span>{{ rotate.pub_date }}</span>
+                            <span>{{ date(rotate.pub_date) }}</span>
                         </div>
                     </li>
                     {% else %}
@@ -91,7 +90,7 @@
                         <div class="lbinfo">
                             <a href="{{ rotate.img_src }}" target="_blank">{{ rotate.title }}</a>
                             <p>{{ rotate.description }}</p>
-                            <span>{{ rotate.pub_date }}</span>
+                            <span>{{ date(rotate.pub_date) }}</span>
                         </div>
                     </li>
                     {% end %}
@@ -144,6 +143,4 @@
           autoChangeAgain();
         });
       });
-
-
 </script>
