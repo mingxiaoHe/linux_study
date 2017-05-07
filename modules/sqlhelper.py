@@ -131,7 +131,7 @@ class SqlHelper(object):
             sql = 'select id from articles where id = (select id from articles where id < %s order by id desc limit 1)' % current_id
             return self.session.execute(sql).fetchone()[0]
         except TypeError as e:
-            return 1
+            return current_id
 
     def get_next_article_byid(self, current_id):
         try:
@@ -157,7 +157,7 @@ class SqlHelper(object):
         return self.session.query(User).filter(User.username == user).scalar()
 
     def get_rotates(self):
-        return self.session.query(Rotate).all()
+        return self.session.query(Rotate).order_by(Rotate.pub_date.desc()).all()
 
     def __del__(self):
         self.session.close()
